@@ -1,0 +1,2861 @@
+{
+  "statuses": [
+    {
+      "created_at": "Tue Jul 30 08:52:29 +0000 2019",
+      "id": 1156125397517553700,
+      "id_str": "1156125397517553666",
+      "text": "RT @SwiftUILab: Beta 5 is here! We can finally set the keyboard type in a #swiftUI TextField. New modifier available: .keyboardType(.number…",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "swiftUI",
+            "indices": [
+              74,
+              82
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "SwiftUILab",
+            "name": "The SwiftUI Lab",
+            "id": 1144175612178948100,
+            "id_str": "1144175612178948096",
+            "indices": [
+              3,
+              14
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"http://tapbots.com/tweetbot\" rel=\"nofollow\">Tweetbot for iΟS</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 1081597136033202200,
+        "id_str": "1081597136033202178",
+        "name": "Nathaniel Fredericks",
+        "screen_name": "nathfreder",
+        "location": "Nova Scotia, Canada",
+        "description": "",
+        "url": "https://t.co/sQn93Fr683",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/sQn93Fr683",
+                "expanded_url": "https://nathfreder.dev",
+                "display_url": "nathfreder.dev",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 60,
+        "friends_count": 75,
+        "listed_count": 3,
+        "created_at": "Sat Jan 05 17:03:47 +0000 2019",
+        "favourites_count": 1312,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 373,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1146464061753835521/t2_-CrOV_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1146464061753835521/t2_-CrOV_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1081597136033202178/1564179904",
+        "profile_link_color": "1B95E0",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Mon Jul 29 21:40:07 +0000 2019",
+        "id": 1155956193036124200,
+        "id_str": "1155956193036124160",
+        "text": "Beta 5 is here! We can finally set the keyboard type in a #swiftUI TextField. New modifier available: .keyboardType(.numberPad)",
+        "truncated": false,
+        "entities": {
+          "hashtags": [
+            {
+              "text": "swiftUI",
+              "indices": [
+                58,
+                66
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": []
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 1144175612178948100,
+          "id_str": "1144175612178948096",
+          "name": "The SwiftUI Lab",
+          "screen_name": "SwiftUILab",
+          "location": "",
+          "description": "When the documentation is missing, we experiment.",
+          "url": "https://t.co/Z13LgZvpn3",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/Z13LgZvpn3",
+                  "expanded_url": "https://swiftui-lab.com",
+                  "display_url": "swiftui-lab.com",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 93,
+          "friends_count": 5,
+          "listed_count": 2,
+          "created_at": "Thu Jun 27 09:28:18 +0000 2019",
+          "favourites_count": 7,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 15,
+          "lang": null,
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "F5F8FA",
+          "profile_background_image_url": null,
+          "profile_background_image_url_https": null,
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/1144604107824599040/BmSlUR9r_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1144604107824599040/BmSlUR9r_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1144175612178948096/1561728054",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": true,
+          "default_profile_image": false,
+          "following": null,
+          "follow_request_sent": null,
+          "notifications": null,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 6,
+        "favorite_count": 17,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 6,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    {
+      "created_at": "Tue Jul 30 08:37:57 +0000 2019",
+      "id": 1156121740382068700,
+      "id_str": "1156121740382068738",
+      "text": "Catalina Beta 5 待ち。#swiftui https://t.co/d69IOa37QA",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "swiftui",
+            "indices": [
+              19,
+              27
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/d69IOa37QA",
+            "expanded_url": "https://twitter.com/azamsharp/status/1155986487357272066",
+            "display_url": "twitter.com/azamsharp/stat…",
+            "indices": [
+              28,
+              51
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "ja",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 3122381894,
+        "id_str": "3122381894",
+        "name": "Mobile Apps",
+        "screen_name": "mobile_apps_4u",
+        "location": "JAPAN",
+        "description": "iOS Developer Xcode11 Swift5.1 iOS13 SwiftUI AffinityDesigner Blender Ubuntu19.04",
+        "url": null,
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 32,
+        "friends_count": 585,
+        "listed_count": 0,
+        "created_at": "Wed Apr 01 01:22:06 +0000 2015",
+        "favourites_count": 419,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 1040,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/583108579684577280/j70t2Pzw_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/583108579684577280/j70t2Pzw_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/3122381894/1498289161",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": true,
+      "quoted_status_id": 1155986487357272000,
+      "quoted_status_id_str": "1155986487357272066",
+      "quoted_status": {
+        "created_at": "Mon Jul 29 23:40:30 +0000 2019",
+        "id": 1155986487357272000,
+        "id_str": "1155986487357272066",
+        "text": "Catalina Beta 5 is currently not available. Is it safe to install Xcode 11 Beta 5? Does it causes issues etc? #iosdev #SwiftUI",
+        "truncated": false,
+        "entities": {
+          "hashtags": [
+            {
+              "text": "iosdev",
+              "indices": [
+                110,
+                117
+              ]
+            },
+            {
+              "text": "SwiftUI",
+              "indices": [
+                118,
+                126
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": []
+        },
+        "metadata": {
+          "iso_language_code": "ja",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 10950092,
+          "id_str": "10950092",
+          "name": "azamsharp",
+          "screen_name": "azamsharp",
+          "location": "Houston, TX",
+          "description": "Lead Instructor at DigitalCrafts, @360iDev Speaker, Top Udemy and https://t.co/IArFMO1XXh Instructor. Get my courses: https://t.co/QqXca21VkA",
+          "url": "https://t.co/wLUX13AJ32",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/wLUX13AJ32",
+                  "expanded_url": "http://www.azamsharp.com",
+                  "display_url": "azamsharp.com",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": [
+                {
+                  "url": "https://t.co/IArFMO1XXh",
+                  "expanded_url": "http://Lynda.com",
+                  "display_url": "Lynda.com",
+                  "indices": [
+                    66,
+                    89
+                  ]
+                },
+                {
+                  "url": "https://t.co/QqXca21VkA",
+                  "expanded_url": "https://www.udemy.com/user/mohammad-azam-2/",
+                  "display_url": "udemy.com/user/mohammad-…",
+                  "indices": [
+                    118,
+                    141
+                  ]
+                }
+              ]
+            }
+          },
+          "protected": false,
+          "followers_count": 2866,
+          "friends_count": 240,
+          "listed_count": 322,
+          "created_at": "Fri Dec 07 21:21:23 +0000 2007",
+          "favourites_count": 1072,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 23769,
+          "lang": null,
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "1A1B1F",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/867534961980657664/F0wBuYZE_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/867534961980657664/F0wBuYZE_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/10950092/1499306603",
+          "profile_link_color": "2FC2EF",
+          "profile_sidebar_border_color": "000000",
+          "profile_sidebar_fill_color": "000000",
+          "profile_text_color": "000000",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": null,
+          "follow_request_sent": null,
+          "notifications": null,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "ja"
+    },
+    {
+      "created_at": "Tue Jul 30 08:36:20 +0000 2019",
+      "id": 1156121336214892500,
+      "id_str": "1156121336214892545",
+      "text": "Catalina beta5 isn't released yet, and \"There are known incompatibilities when using SwiftUI on macOS Catalina beta… https://t.co/coHjd0lQH6",
+      "truncated": true,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/coHjd0lQH6",
+            "expanded_url": "https://twitter.com/i/web/status/1156121336214892545",
+            "display_url": "twitter.com/i/web/status/1…",
+            "indices": [
+              117,
+              140
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 94409905,
+        "id_str": "94409905",
+        "name": "David Arve",
+        "screen_name": "davidarve",
+        "location": "",
+        "description": "Developer of yet another workout app. he/him",
+        "url": "https://t.co/Dh1n9oGViN",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/Dh1n9oGViN",
+                "expanded_url": "http://styrka.app",
+                "display_url": "styrka.app",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 50,
+        "friends_count": 95,
+        "listed_count": 1,
+        "created_at": "Thu Dec 03 20:45:30 +0000 2009",
+        "favourites_count": 304,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 817,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/378800000523705812/c91bd0dc08192f3ca25e1366618ea52a_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/378800000523705812/c91bd0dc08192f3ca25e1366618ea52a_normal.jpeg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+    {
+      "created_at": "Tue Jul 30 08:35:46 +0000 2019",
+      "id": 1156121191196713000,
+      "id_str": "1156121191196712960",
+      "text": "またこれかー #swiftui https://t.co/JwV0dlHkBe",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "swiftui",
+            "indices": [
+              7,
+              15
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/JwV0dlHkBe",
+            "expanded_url": "https://twitter.com/azamsharp/status/1156003294055034881",
+            "display_url": "twitter.com/azamsharp/stat…",
+            "indices": [
+              16,
+              39
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "ja",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 3122381894,
+        "id_str": "3122381894",
+        "name": "Mobile Apps",
+        "screen_name": "mobile_apps_4u",
+        "location": "JAPAN",
+        "description": "iOS Developer Xcode11 Swift5.1 iOS13 SwiftUI AffinityDesigner Blender Ubuntu19.04",
+        "url": null,
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 32,
+        "friends_count": 585,
+        "listed_count": 0,
+        "created_at": "Wed Apr 01 01:22:06 +0000 2015",
+        "favourites_count": 419,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 1040,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/583108579684577280/j70t2Pzw_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/583108579684577280/j70t2Pzw_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/3122381894/1498289161",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": true,
+      "quoted_status_id": 1156003294055035000,
+      "quoted_status_id_str": "1156003294055034881",
+      "quoted_status": {
+        "created_at": "Tue Jul 30 00:47:17 +0000 2019",
+        "id": 1156003294055035000,
+        "id_str": "1156003294055034881",
+        "text": "Xcode 11 Beta 5 on Catalina 4 - The Xcode previews is not working. Hopefully, this would be fixed once Catalina 5 arrives.",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": []
+        },
+        "metadata": {
+          "iso_language_code": "ja",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 10950092,
+          "id_str": "10950092",
+          "name": "azamsharp",
+          "screen_name": "azamsharp",
+          "location": "Houston, TX",
+          "description": "Lead Instructor at DigitalCrafts, @360iDev Speaker, Top Udemy and https://t.co/IArFMO1XXh Instructor. Get my courses: https://t.co/QqXca21VkA",
+          "url": "https://t.co/wLUX13AJ32",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/wLUX13AJ32",
+                  "expanded_url": "http://www.azamsharp.com",
+                  "display_url": "azamsharp.com",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": [
+                {
+                  "url": "https://t.co/IArFMO1XXh",
+                  "expanded_url": "http://Lynda.com",
+                  "display_url": "Lynda.com",
+                  "indices": [
+                    66,
+                    89
+                  ]
+                },
+                {
+                  "url": "https://t.co/QqXca21VkA",
+                  "expanded_url": "https://www.udemy.com/user/mohammad-azam-2/",
+                  "display_url": "udemy.com/user/mohammad-…",
+                  "indices": [
+                    118,
+                    141
+                  ]
+                }
+              ]
+            }
+          },
+          "protected": false,
+          "followers_count": 2866,
+          "friends_count": 240,
+          "listed_count": 322,
+          "created_at": "Fri Dec 07 21:21:23 +0000 2007",
+          "favourites_count": 1072,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 23769,
+          "lang": null,
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "1A1B1F",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/867534961980657664/F0wBuYZE_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/867534961980657664/F0wBuYZE_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/10950092/1499306603",
+          "profile_link_color": "2FC2EF",
+          "profile_sidebar_border_color": "000000",
+          "profile_sidebar_fill_color": "000000",
+          "profile_text_color": "000000",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": null,
+          "follow_request_sent": null,
+          "notifications": null,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 3,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "ja"
+    },
+    {
+      "created_at": "Tue Jul 30 08:21:54 +0000 2019",
+      "id": 1156117700562870300,
+      "id_str": "1156117700562870272",
+      "text": "RT @SwiftUILab: Beta 5 is here! We can finally set the keyboard type in a #swiftUI TextField. New modifier available: .keyboardType(.number…",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "swiftUI",
+            "indices": [
+              74,
+              82
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "SwiftUILab",
+            "name": "The SwiftUI Lab",
+            "id": 1144175612178948100,
+            "id_str": "1144175612178948096",
+            "indices": [
+              3,
+              14
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 1021796772014968800,
+        "id_str": "1021796772014968833",
+        "name": "Elsayed Hussein",
+        "screen_name": "bokhary92",
+        "location": "Cairo, Egypt",
+        "description": "iOS developer behind @bokhary18 app, you can get it from here 👉 https://t.co/zVB1Zw2X61",
+        "url": "https://t.co/6aRSAfaGWy",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/6aRSAfaGWy",
+                "expanded_url": "https://medium.com/@bokhary",
+                "display_url": "medium.com/@bokhary",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": [
+              {
+                "url": "https://t.co/zVB1Zw2X61",
+                "expanded_url": "https://apple.co/2GYmz4L",
+                "display_url": "apple.co/2GYmz4L",
+                "indices": [
+                  64,
+                  87
+                ]
+              }
+            ]
+          }
+        },
+        "protected": false,
+        "followers_count": 10,
+        "friends_count": 78,
+        "listed_count": 1,
+        "created_at": "Tue Jul 24 16:38:29 +0000 2018",
+        "favourites_count": 187,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 51,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1124619850750537730/MkJsBODX_normal.png",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1124619850750537730/MkJsBODX_normal.png",
+        "profile_link_color": "ABB8C2",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Mon Jul 29 21:40:07 +0000 2019",
+        "id": 1155956193036124200,
+        "id_str": "1155956193036124160",
+        "text": "Beta 5 is here! We can finally set the keyboard type in a #swiftUI TextField. New modifier available: .keyboardType(.numberPad)",
+        "truncated": false,
+        "entities": {
+          "hashtags": [
+            {
+              "text": "swiftUI",
+              "indices": [
+                58,
+                66
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": []
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 1144175612178948100,
+          "id_str": "1144175612178948096",
+          "name": "The SwiftUI Lab",
+          "screen_name": "SwiftUILab",
+          "location": "",
+          "description": "When the documentation is missing, we experiment.",
+          "url": "https://t.co/Z13LgZvpn3",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/Z13LgZvpn3",
+                  "expanded_url": "https://swiftui-lab.com",
+                  "display_url": "swiftui-lab.com",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 93,
+          "friends_count": 5,
+          "listed_count": 2,
+          "created_at": "Thu Jun 27 09:28:18 +0000 2019",
+          "favourites_count": 7,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 15,
+          "lang": null,
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "F5F8FA",
+          "profile_background_image_url": null,
+          "profile_background_image_url_https": null,
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/1144604107824599040/BmSlUR9r_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1144604107824599040/BmSlUR9r_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1144175612178948096/1561728054",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": true,
+          "default_profile_image": false,
+          "following": null,
+          "follow_request_sent": null,
+          "notifications": null,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 6,
+        "favorite_count": 17,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 6,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    {
+      "created_at": "Tue Jul 30 07:59:10 +0000 2019",
+      "id": 1156111981650296800,
+      "id_str": "1156111981650296832",
+      "text": "This is quite a big issue for beta 5, isn't it? #xcode #swiftui #ios13beta5 https://t.co/i5IHOCsn28",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "xcode",
+            "indices": [
+              48,
+              54
+            ]
+          },
+          {
+            "text": "swiftui",
+            "indices": [
+              55,
+              63
+            ]
+          },
+          {
+            "text": "ios13beta5",
+            "indices": [
+              64,
+              75
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [],
+        "media": [
+          {
+            "id": 1156111966831829000,
+            "id_str": "1156111966831828993",
+            "indices": [
+              76,
+              99
+            ],
+            "media_url": "http://pbs.twimg.com/media/EAtVtV-W4AEnLdB.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/EAtVtV-W4AEnLdB.jpg",
+            "url": "https://t.co/i5IHOCsn28",
+            "display_url": "pic.twitter.com/i5IHOCsn28",
+            "expanded_url": "https://twitter.com/davidarve/status/1156111981650296832/photo/1",
+            "type": "photo",
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1516,
+                "h": 268,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 212,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 120,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 1156111966831829000,
+            "id_str": "1156111966831828993",
+            "indices": [
+              76,
+              99
+            ],
+            "media_url": "http://pbs.twimg.com/media/EAtVtV-W4AEnLdB.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/EAtVtV-W4AEnLdB.jpg",
+            "url": "https://t.co/i5IHOCsn28",
+            "display_url": "pic.twitter.com/i5IHOCsn28",
+            "expanded_url": "https://twitter.com/davidarve/status/1156111981650296832/photo/1",
+            "type": "photo",
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "large": {
+                "w": 1516,
+                "h": 268,
+                "resize": "fit"
+              },
+              "medium": {
+                "w": 1200,
+                "h": 212,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 120,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 94409905,
+        "id_str": "94409905",
+        "name": "David Arve",
+        "screen_name": "davidarve",
+        "location": "",
+        "description": "Developer of yet another workout app. he/him",
+        "url": "https://t.co/Dh1n9oGViN",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/Dh1n9oGViN",
+                "expanded_url": "http://styrka.app",
+                "display_url": "styrka.app",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 50,
+        "friends_count": 95,
+        "listed_count": 1,
+        "created_at": "Thu Dec 03 20:45:30 +0000 2009",
+        "favourites_count": 304,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 817,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/378800000523705812/c91bd0dc08192f3ca25e1366618ea52a_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/378800000523705812/c91bd0dc08192f3ca25e1366618ea52a_normal.jpeg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 1,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+    {
+      "created_at": "Tue Jul 30 07:42:00 +0000 2019",
+      "id": 1156107662091796500,
+      "id_str": "1156107662091796481",
+      "text": "#swiftUI has anyone else had this error on beta5 #swiftUI https://t.co/AMUi7XG1Ld",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "swiftUI",
+            "indices": [
+              0,
+              8
+            ]
+          },
+          {
+            "text": "swiftUI",
+            "indices": [
+              49,
+              57
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [],
+        "media": [
+          {
+            "id": 1156107651799027700,
+            "id_str": "1156107651799027712",
+            "indices": [
+              58,
+              81
+            ],
+            "media_url": "http://pbs.twimg.com/media/EAtRyLOXkAAruLZ.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/EAtRyLOXkAAruLZ.jpg",
+            "url": "https://t.co/AMUi7XG1Ld",
+            "display_url": "pic.twitter.com/AMUi7XG1Ld",
+            "expanded_url": "https://twitter.com/Mikec81united/status/1156107662091796481/photo/1",
+            "type": "photo",
+            "sizes": {
+              "large": {
+                "w": 1536,
+                "h": 2048,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium": {
+                "w": 900,
+                "h": 1200,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 510,
+                "h": 680,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 1156107651799027700,
+            "id_str": "1156107651799027712",
+            "indices": [
+              58,
+              81
+            ],
+            "media_url": "http://pbs.twimg.com/media/EAtRyLOXkAAruLZ.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/EAtRyLOXkAAruLZ.jpg",
+            "url": "https://t.co/AMUi7XG1Ld",
+            "display_url": "pic.twitter.com/AMUi7XG1Ld",
+            "expanded_url": "https://twitter.com/Mikec81united/status/1156107662091796481/photo/1",
+            "type": "photo",
+            "sizes": {
+              "large": {
+                "w": 1536,
+                "h": 2048,
+                "resize": "fit"
+              },
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium": {
+                "w": 900,
+                "h": 1200,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 510,
+                "h": 680,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 121830782,
+        "id_str": "121830782",
+        "name": "MikeC",
+        "screen_name": "Mikec81united",
+        "location": "harrow london england ",
+        "description": "Supporter of mufc (silver season ticket holder) and england 2 caps of top capper ...lover of sci fi and thriler tv shows. any views are my own!!!",
+        "url": null,
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 619,
+        "friends_count": 701,
+        "listed_count": 15,
+        "created_at": "Wed Mar 10 18:44:03 +0000 2010",
+        "favourites_count": 22678,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 25123,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1142366941279076352/StdIveMW_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1142366941279076352/StdIveMW_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/121830782/1561196479",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+    {
+      "created_at": "Tue Jul 30 07:37:30 +0000 2019",
+      "id": 1156106526748303400,
+      "id_str": "1156106526748303363",
+      "text": "RT @MrMcSwiftface: Trying a bit of full stack with #vapor #SwiftUI #Combine. Looks like the future so I had better embrace it!\n\n...yes ther…",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "vapor",
+            "indices": [
+              51,
+              57
+            ]
+          },
+          {
+            "text": "SwiftUI",
+            "indices": [
+              58,
+              66
+            ]
+          },
+          {
+            "text": "Combine",
+            "indices": [
+              67,
+              75
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "MrMcSwiftface",
+            "name": "Swifty McSwiftface",
+            "id": 725327174002200600,
+            "id_str": "725327174002200576",
+            "indices": [
+              3,
+              17
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 1972921381,
+        "id_str": "1972921381",
+        "name": "Mohammad Awais",
+        "screen_name": "abulkhairawais",
+        "location": "Punjab, Pakistan",
+        "description": "iOS Dev @ Bugdev Studios",
+        "url": "https://t.co/YV1X6ZB0li",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/YV1X6ZB0li",
+                "expanded_url": "http://awaisfayyaz.com",
+                "display_url": "awaisfayyaz.com",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 18,
+        "friends_count": 219,
+        "listed_count": 0,
+        "created_at": "Sat Oct 19 21:28:02 +0000 2013",
+        "favourites_count": 156,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 79,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "C0DEED",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/860453279112859648/tieRMSxP_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/860453279112859648/tieRMSxP_normal.jpg",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Mon Jul 29 11:05:21 +0000 2019",
+        "id": 1155796448782553000,
+        "id_str": "1155796448782553089",
+        "text": "Trying a bit of full stack with #vapor #SwiftUI #Combine. Looks like the future so I had better embrace it!\n\n...yes… https://t.co/vUMoqIHlH9",
+        "truncated": true,
+        "entities": {
+          "hashtags": [
+            {
+              "text": "vapor",
+              "indices": [
+                32,
+                38
+              ]
+            },
+            {
+              "text": "SwiftUI",
+              "indices": [
+                39,
+                47
+              ]
+            },
+            {
+              "text": "Combine",
+              "indices": [
+                48,
+                56
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/vUMoqIHlH9",
+              "expanded_url": "https://twitter.com/i/web/status/1155796448782553089",
+              "display_url": "twitter.com/i/web/status/1…",
+              "indices": [
+                117,
+                140
+              ]
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 725327174002200600,
+          "id_str": "725327174002200576",
+          "name": "Swifty McSwiftface",
+          "screen_name": "MrMcSwiftface",
+          "location": "London, England",
+          "description": "Freelance iOS Developer, occasional podcaster on Fireside Swift & instructor of Mastering Table Views on udemy. I💙🎼🎸🏂🏸🍷🍺🐶✈️🔬🎬🏋🏻‍♂️🧘🏻‍♂️🍦☕️",
+          "url": "https://t.co/2dKviOrONU",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/2dKviOrONU",
+                  "expanded_url": "https://www.udemy.com/ios-10-swift-3-mastering-table-views/learn/v4/overview",
+                  "display_url": "udemy.com/ios-10-swift-3…",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 2415,
+          "friends_count": 319,
+          "listed_count": 30,
+          "created_at": "Wed Apr 27 14:14:09 +0000 2016",
+          "favourites_count": 6311,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 3819,
+          "lang": null,
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "000000",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/988728672780726274/wd5CbPqu_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/988728672780726274/wd5CbPqu_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/725327174002200576/1524517598",
+          "profile_link_color": "FF691F",
+          "profile_sidebar_border_color": "000000",
+          "profile_sidebar_fill_color": "000000",
+          "profile_text_color": "000000",
+          "profile_use_background_image": false,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": null,
+          "follow_request_sent": null,
+          "notifications": null,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 9,
+        "favorite_count": 63,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 9,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    {
+      "created_at": "Tue Jul 30 07:30:53 +0000 2019",
+      "id": 1156104864268738600,
+      "id_str": "1156104864268738566",
+      "text": "The small things that will make #SwiftUI be correct by default 👌🏻 https://t.co/ZNo8MFbSwR",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SwiftUI",
+            "indices": [
+              32,
+              40
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [],
+        "media": [
+          {
+            "id": 1156104859659198500,
+            "id_str": "1156104859659198464",
+            "indices": [
+              66,
+              89
+            ],
+            "media_url": "http://pbs.twimg.com/media/EAtPPpsW4AANE3a.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/EAtPPpsW4AANE3a.jpg",
+            "url": "https://t.co/ZNo8MFbSwR",
+            "display_url": "pic.twitter.com/ZNo8MFbSwR",
+            "expanded_url": "https://twitter.com/alexito4/status/1156104864268738566/photo/1",
+            "type": "photo",
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium": {
+                "w": 1125,
+                "h": 197,
+                "resize": "fit"
+              },
+              "large": {
+                "w": 1125,
+                "h": 197,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 119,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "extended_entities": {
+        "media": [
+          {
+            "id": 1156104859659198500,
+            "id_str": "1156104859659198464",
+            "indices": [
+              66,
+              89
+            ],
+            "media_url": "http://pbs.twimg.com/media/EAtPPpsW4AANE3a.jpg",
+            "media_url_https": "https://pbs.twimg.com/media/EAtPPpsW4AANE3a.jpg",
+            "url": "https://t.co/ZNo8MFbSwR",
+            "display_url": "pic.twitter.com/ZNo8MFbSwR",
+            "expanded_url": "https://twitter.com/alexito4/status/1156104864268738566/photo/1",
+            "type": "photo",
+            "sizes": {
+              "thumb": {
+                "w": 150,
+                "h": 150,
+                "resize": "crop"
+              },
+              "medium": {
+                "w": 1125,
+                "h": 197,
+                "resize": "fit"
+              },
+              "large": {
+                "w": 1125,
+                "h": 197,
+                "resize": "fit"
+              },
+              "small": {
+                "w": 680,
+                "h": 119,
+                "resize": "fit"
+              }
+            }
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"http://tapbots.com/tweetbot\" rel=\"nofollow\">Tweetbot for iΟS</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 14649581,
+        "id_str": "14649581",
+        "name": "Alejandro Martinez",
+        "screen_name": "alexito4",
+        "location": "London",
+        "description": "Software Crafter, Mobile Captain at @LifeWorks & Fake Youtuber l APIs are UX for developers. |languages geek #swiftlang lover ❤️ |🎗",
+        "url": "https://t.co/4LPiLk4KoN",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/4LPiLk4KoN",
+                "expanded_url": "http://alejandromp.com/",
+                "display_url": "alejandromp.com",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 1234,
+        "friends_count": 455,
+        "listed_count": 90,
+        "created_at": "Sun May 04 16:53:52 +0000 2008",
+        "favourites_count": 5572,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 30689,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "0E0D02",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/904068512209096704/--qD4lMy_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/904068512209096704/--qD4lMy_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/14649581/1529244484",
+        "profile_link_color": "39BD91",
+        "profile_sidebar_border_color": "BEDFB6",
+        "profile_sidebar_fill_color": "0E0D02",
+        "profile_text_color": "895429",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 1,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+    {
+      "created_at": "Tue Jul 30 07:00:41 +0000 2019",
+      "id": 1156097264089215000,
+      "id_str": "1156097264089214976",
+      "text": "Whether you are familiar with #SwiftUI or not, we have published a quite comprehensive post on the topic by… https://t.co/wAHVa9eacp",
+      "truncated": true,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SwiftUI",
+            "indices": [
+              30,
+              38
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/wAHVa9eacp",
+            "expanded_url": "https://twitter.com/i/web/status/1156097264089214976",
+            "display_url": "twitter.com/i/web/status/1…",
+            "indices": [
+              109,
+              132
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"http://gainapp.com\" rel=\"nofollow\">Gain Platform</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 2174745661,
+        "id_str": "2174745661",
+        "name": "Karumi",
+        "screen_name": "goKarumi",
+        "location": "Madrid, Comunidad de Madrid",
+        "description": "Karumi is the Rock Solid Code software development studio. We embark on every project with a commitment to create something elegant, enduring and effective.",
+        "url": "https://t.co/u2mdmsBzMu",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/u2mdmsBzMu",
+                "expanded_url": "http://www.Karumi.com",
+                "display_url": "Karumi.com",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 13015,
+        "friends_count": 218,
+        "listed_count": 301,
+        "created_at": "Mon Nov 04 20:57:50 +0000 2013",
+        "favourites_count": 2257,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 11055,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "27343D",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/529404224485228544/IerbWmA4_normal.jpeg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/529404224485228544/IerbWmA4_normal.jpeg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/2174745661/1457230945",
+        "profile_link_color": "FC3480",
+        "profile_sidebar_border_color": "FFFFFF",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 5,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+    {
+      "created_at": "Tue Jul 30 06:52:42 +0000 2019",
+      "id": 1156095255269085200,
+      "id_str": "1156095255269085184",
+      "text": "RT @snuff_4: There's a really nice example given in the release notes to understand ObservableObject. It makes more sense in terms of the w…",
+      "truncated": false,
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "snuff_4",
+            "name": "Rudrank Riyam",
+            "id": 899697647455412200,
+            "id_str": "899697647455412224",
+            "indices": [
+              3,
+              11
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 852792820142194700,
+        "id_str": "852792820142194689",
+        "name": "Rahul👨🏻‍💻",
+        "screen_name": "rahulrs0029",
+        "location": "India",
+        "description": "I know a few things, but I still got a lot to learn.",
+        "url": "https://t.co/q6O3NGVBQi",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/q6O3NGVBQi",
+                "expanded_url": "http://github.com/rahulrs0029",
+                "display_url": "github.com/rahulrs0029",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 371,
+        "friends_count": 388,
+        "listed_count": 6,
+        "created_at": "Fri Apr 14 07:57:07 +0000 2017",
+        "favourites_count": 16628,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 4617,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1135906274896359425/z3yeO5AQ_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1135906274896359425/z3yeO5AQ_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/852792820142194689/1559704639",
+        "profile_link_color": "000000",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Mon Jul 29 21:29:41 +0000 2019",
+        "id": 1155953566172897300,
+        "id_str": "1155953566172897281",
+        "text": "There's a really nice example given in the release notes to understand ObservableObject. It makes more sense in ter… https://t.co/4LbfDmDP3f",
+        "truncated": true,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/4LbfDmDP3f",
+              "expanded_url": "https://twitter.com/i/web/status/1155953566172897281",
+              "display_url": "twitter.com/i/web/status/1…",
+              "indices": [
+                117,
+                140
+              ]
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 899697647455412200,
+          "id_str": "899697647455412224",
+          "name": "Rudrank Riyam",
+          "screen_name": "snuff_4",
+          "location": "New Delhi, India",
+          "description": "Apple WWDC Scholarship Winner 2019.  Google Summer of Code 2019 at https://t.co/0eDpWirBcv iOS, supporting VoiceOver.  Hustling to survive. #100DaysOfSwiftUI",
+          "url": "https://t.co/3W7VArNpPw",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/3W7VArNpPw",
+                  "expanded_url": "http://linkedin.com/in/rudrankriyam",
+                  "display_url": "linkedin.com/in/rudrankriyam",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": [
+                {
+                  "url": "https://t.co/0eDpWirBcv",
+                  "expanded_url": "http://Rocket.Chat",
+                  "display_url": "Rocket.Chat",
+                  "indices": [
+                    67,
+                    90
+                  ]
+                }
+              ]
+            }
+          },
+          "protected": false,
+          "followers_count": 252,
+          "friends_count": 69,
+          "listed_count": 3,
+          "created_at": "Mon Aug 21 18:20:09 +0000 2017",
+          "favourites_count": 9513,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 1061,
+          "lang": null,
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "000000",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/1142505883806494720/hEgFn4w5_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1142505883806494720/hEgFn4w5_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/899697647455412224/1563489225",
+          "profile_link_color": "981CEB",
+          "profile_sidebar_border_color": "000000",
+          "profile_sidebar_fill_color": "000000",
+          "profile_text_color": "000000",
+          "profile_use_background_image": false,
+          "has_extended_profile": true,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": null,
+          "follow_request_sent": null,
+          "notifications": null,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 6,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    {
+      "created_at": "Tue Jul 30 06:47:25 +0000 2019",
+      "id": 1156093923405652000,
+      "id_str": "1156093923405651968",
+      "text": "RT @SwiftUILab: Paths are broken in #SwiftUI beta 5 and will crash your app. 🙁It is disclosed in the release notes. So make sure to keep a…",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SwiftUI",
+            "indices": [
+              36,
+              44
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "SwiftUILab",
+            "name": "The SwiftUI Lab",
+            "id": 1144175612178948100,
+            "id_str": "1144175612178948096",
+            "indices": [
+              3,
+              14
+            ]
+          }
+        ],
+        "urls": []
+      },
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 852792820142194700,
+        "id_str": "852792820142194689",
+        "name": "Rahul👨🏻‍💻",
+        "screen_name": "rahulrs0029",
+        "location": "India",
+        "description": "I know a few things, but I still got a lot to learn.",
+        "url": "https://t.co/q6O3NGVBQi",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/q6O3NGVBQi",
+                "expanded_url": "http://github.com/rahulrs0029",
+                "display_url": "github.com/rahulrs0029",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 371,
+        "friends_count": 388,
+        "listed_count": 6,
+        "created_at": "Fri Apr 14 07:57:07 +0000 2017",
+        "favourites_count": 16628,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 4617,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1135906274896359425/z3yeO5AQ_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1135906274896359425/z3yeO5AQ_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/852792820142194689/1559704639",
+        "profile_link_color": "000000",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": true,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Tue Jul 30 06:38:31 +0000 2019",
+        "id": 1156091686151475200,
+        "id_str": "1156091686151475200",
+        "text": "Paths are broken in #SwiftUI beta 5 and will crash your app. 🙁It is disclosed in the release notes. So make sure to… https://t.co/56pynL8tXF",
+        "truncated": true,
+        "entities": {
+          "hashtags": [
+            {
+              "text": "SwiftUI",
+              "indices": [
+                20,
+                28
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/56pynL8tXF",
+              "expanded_url": "https://twitter.com/i/web/status/1156091686151475200",
+              "display_url": "twitter.com/i/web/status/1…",
+              "indices": [
+                117,
+                140
+              ]
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 1144175612178948100,
+          "id_str": "1144175612178948096",
+          "name": "The SwiftUI Lab",
+          "screen_name": "SwiftUILab",
+          "location": "",
+          "description": "When the documentation is missing, we experiment.",
+          "url": "https://t.co/Z13LgZvpn3",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/Z13LgZvpn3",
+                  "expanded_url": "https://swiftui-lab.com",
+                  "display_url": "swiftui-lab.com",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 93,
+          "friends_count": 5,
+          "listed_count": 2,
+          "created_at": "Thu Jun 27 09:28:18 +0000 2019",
+          "favourites_count": 7,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 15,
+          "lang": null,
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "F5F8FA",
+          "profile_background_image_url": null,
+          "profile_background_image_url_https": null,
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/1144604107824599040/BmSlUR9r_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1144604107824599040/BmSlUR9r_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1144175612178948096/1561728054",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": true,
+          "default_profile_image": false,
+          "following": null,
+          "follow_request_sent": null,
+          "notifications": null,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 3,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "is_quote_status": false,
+      "retweet_count": 1,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    {
+      "created_at": "Tue Jul 30 06:44:49 +0000 2019",
+      "id": 1156093271426289700,
+      "id_str": "1156093271426289664",
+      "text": "Good introductory article on implementing gestures in SwiftUI: https://t.co/WJWsqBnmDz #iosdev #SwiftUI",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "iosdev",
+            "indices": [
+              87,
+              94
+            ]
+          },
+          {
+            "text": "SwiftUI",
+            "indices": [
+              95,
+              103
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/WJWsqBnmDz",
+            "expanded_url": "https://mecid.github.io/2019/07/10/gestures-in-swiftui/",
+            "display_url": "mecid.github.io/2019/07/10/ges…",
+            "indices": [
+              63,
+              86
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 2377041,
+        "id_str": "2377041",
+        "name": "George Yang",
+        "screen_name": "AsceticMonk",
+        "location": "Irvine, CA",
+        "description": "iOS developer @Salesforce, lived in 5 countries 🇨🇳🇧🇴🇦🇷🇺🇸🇨🇦",
+        "url": "http://t.co/O2LGpiokPD",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http://t.co/O2LGpiokPD",
+                "expanded_url": "http://www.asceticmonk.com",
+                "display_url": "asceticmonk.com",
+                "indices": [
+                  0,
+                  22
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 507,
+        "friends_count": 418,
+        "listed_count": 50,
+        "created_at": "Tue Mar 27 00:15:17 +0000 2007",
+        "favourites_count": 138,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": true,
+        "verified": false,
+        "statuses_count": 11847,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/599364380308832256/KCw8qJA-_normal.png",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/599364380308832256/KCw8qJA-_normal.png",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/2377041/1431213855",
+        "profile_link_color": "FA743E",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "regular"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "en"
+    },
+    {
+      "created_at": "Tue Jul 30 06:38:31 +0000 2019",
+      "id": 1156091686151475200,
+      "id_str": "1156091686151475200",
+      "text": "Paths are broken in #SwiftUI beta 5 and will crash your app. 🙁It is disclosed in the release notes. So make sure to… https://t.co/56pynL8tXF",
+      "truncated": true,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "SwiftUI",
+            "indices": [
+              20,
+              28
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [],
+        "urls": [
+          {
+            "url": "https://t.co/56pynL8tXF",
+            "expanded_url": "https://twitter.com/i/web/status/1156091686151475200",
+            "display_url": "twitter.com/i/web/status/1…",
+            "indices": [
+              117,
+              140
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "en",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 1144175612178948100,
+        "id_str": "1144175612178948096",
+        "name": "The SwiftUI Lab",
+        "screen_name": "SwiftUILab",
+        "location": "",
+        "description": "When the documentation is missing, we experiment.",
+        "url": "https://t.co/Z13LgZvpn3",
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/Z13LgZvpn3",
+                "expanded_url": "https://swiftui-lab.com",
+                "display_url": "swiftui-lab.com",
+                "indices": [
+                  0,
+                  23
+                ]
+              }
+            ]
+          },
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 93,
+        "friends_count": 5,
+        "listed_count": 2,
+        "created_at": "Thu Jun 27 09:28:18 +0000 2019",
+        "favourites_count": 7,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 15,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "F5F8FA",
+        "profile_background_image_url": null,
+        "profile_background_image_url_https": null,
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/1144604107824599040/BmSlUR9r_normal.jpg",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1144604107824599040/BmSlUR9r_normal.jpg",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1144175612178948096/1561728054",
+        "profile_link_color": "1DA1F2",
+        "profile_sidebar_border_color": "C0DEED",
+        "profile_sidebar_fill_color": "DDEEF6",
+        "profile_text_color": "333333",
+        "profile_use_background_image": true,
+        "has_extended_profile": false,
+        "default_profile": true,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "is_quote_status": false,
+      "retweet_count": 1,
+      "favorite_count": 3,
+      "favorited": false,
+      "retweeted": false,
+      "lang": "en"
+    },
+    {
+      "created_at": "Tue Jul 30 06:16:25 +0000 2019",
+      "id": 1156086124831490000,
+      "id_str": "1156086124831490049",
+      "text": "RT @ioscreator: SwiftUI TextField Tutorial  https://t.co/YBJUfdbCPQ  #swiftui #ios13 #iosdev #swiftlang",
+      "truncated": false,
+      "entities": {
+        "hashtags": [
+          {
+            "text": "swiftui",
+            "indices": [
+              69,
+              77
+            ]
+          },
+          {
+            "text": "ios13",
+            "indices": [
+              78,
+              84
+            ]
+          },
+          {
+            "text": "iosdev",
+            "indices": [
+              85,
+              92
+            ]
+          },
+          {
+            "text": "swiftlang",
+            "indices": [
+              93,
+              103
+            ]
+          }
+        ],
+        "symbols": [],
+        "user_mentions": [
+          {
+            "screen_name": "ioscreator",
+            "name": "ioscreator",
+            "id": 369715829,
+            "id_str": "369715829",
+            "indices": [
+              3,
+              14
+            ]
+          }
+        ],
+        "urls": [
+          {
+            "url": "https://t.co/YBJUfdbCPQ",
+            "expanded_url": "https://www.ioscreator.com/tutorials/swiftui-textfield-tutorial",
+            "display_url": "ioscreator.com/tutorials/swif…",
+            "indices": [
+              44,
+              67
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "iso_language_code": "et",
+        "result_type": "recent"
+      },
+      "source": "<a href=\"https://www.botlibre.com\" rel=\"nofollow\">Bot Libre!</a>",
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 3282625950,
+        "id_str": "3282625950",
+        "name": "Swift Developer bot",
+        "screen_name": "swiftlangbot",
+        "location": "",
+        "description": "Follow for Latest Swift Programming News,Tutorials and more",
+        "url": null,
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        },
+        "protected": false,
+        "followers_count": 784,
+        "friends_count": 1,
+        "listed_count": 701,
+        "created_at": "Fri Jul 17 18:53:05 +0000 2015",
+        "favourites_count": 0,
+        "utc_offset": null,
+        "time_zone": null,
+        "geo_enabled": false,
+        "verified": false,
+        "statuses_count": 53934,
+        "lang": null,
+        "contributors_enabled": false,
+        "is_translator": false,
+        "is_translation_enabled": false,
+        "profile_background_color": "000000",
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+        "profile_background_tile": false,
+        "profile_image_url": "http://pbs.twimg.com/profile_images/622128845789900800/sqk3nuOJ_normal.png",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/622128845789900800/sqk3nuOJ_normal.png",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/3282625950/1437162108",
+        "profile_link_color": "FA743E",
+        "profile_sidebar_border_color": "000000",
+        "profile_sidebar_fill_color": "000000",
+        "profile_text_color": "000000",
+        "profile_use_background_image": false,
+        "has_extended_profile": false,
+        "default_profile": false,
+        "default_profile_image": false,
+        "following": null,
+        "follow_request_sent": null,
+        "notifications": null,
+        "translator_type": "none"
+      },
+      "geo": null,
+      "coordinates": null,
+      "place": null,
+      "contributors": null,
+      "retweeted_status": {
+        "created_at": "Tue Jul 30 06:00:31 +0000 2019",
+        "id": 1156082121439613000,
+        "id_str": "1156082121439612929",
+        "text": "SwiftUI TextField Tutorial  https://t.co/YBJUfdbCPQ  #swiftui #ios13 #iosdev #swiftlang",
+        "truncated": false,
+        "entities": {
+          "hashtags": [
+            {
+              "text": "swiftui",
+              "indices": [
+                53,
+                61
+              ]
+            },
+            {
+              "text": "ios13",
+              "indices": [
+                62,
+                68
+              ]
+            },
+            {
+              "text": "iosdev",
+              "indices": [
+                69,
+                76
+              ]
+            },
+            {
+              "text": "swiftlang",
+              "indices": [
+                77,
+                87
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/YBJUfdbCPQ",
+              "expanded_url": "https://www.ioscreator.com/tutorials/swiftui-textfield-tutorial",
+              "display_url": "ioscreator.com/tutorials/swif…",
+              "indices": [
+                28,
+                51
+              ]
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "et",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.squarespace.com\" rel=\"nofollow\">Squarespace</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 369715829,
+          "id_str": "369715829",
+          "name": "ioscreator",
+          "screen_name": "ioscreator",
+          "location": "Zeist, Netherlands",
+          "description": "Indie iOS Developer",
+          "url": "http://t.co/F9yJVSMJw5",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "http://t.co/F9yJVSMJw5",
+                  "expanded_url": "http://ioscreator.com",
+                  "display_url": "ioscreator.com",
+                  "indices": [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 2047,
+          "friends_count": 105,
+          "listed_count": 77,
+          "created_at": "Wed Sep 07 20:35:57 +0000 2011",
+          "favourites_count": 792,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 432,
+          "lang": null,
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "C0DEED",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/2073980175/ioscreatorlogo_normal.png",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/2073980175/ioscreatorlogo_normal.png",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": true,
+          "default_profile_image": false,
+          "following": null,
+          "follow_request_sent": null,
+          "notifications": null,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 1,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "et"
+      },
+      "is_quote_status": false,
+      "retweet_count": 1,
+      "favorite_count": 0,
+      "favorited": false,
+      "retweeted": false,
+      "possibly_sensitive": false,
+      "lang": "et"
+    }
+  ],
+  "search_metadata": {
+    "completed_in": 0.043,
+    "max_id": 1156125397517553700,
+    "max_id_str": "1156125397517553666",
+    "next_results": "?max_id=1156086124831490048&q=%23swiftui&include_entities=1",
+    "query": "%23swiftui",
+    "refresh_url": "?since_id=1156125397517553666&q=%23swiftui&include_entities=1",
+    "count": 15,
+    "since_id": 0,
+    "since_id_str": "0"
+  }
+}
