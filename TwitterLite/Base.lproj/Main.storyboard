@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gxk-Cc-fn0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Twitter Lite View Controller-->
+        <scene sceneID="bkA-9s-dI1">
+            <objects>
+                <viewController id="Gxk-Cc-fn0" customClass="TwitterLiteViewController" customModule="TwitterLite" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JUJ-1e-J10">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar multipleTouchEnabled="YES" contentMode="redraw" searchBarStyle="prominent" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9N-Ua-YYi" customClass="TwitterLiteSearchbar" customModule="TwitterLite" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <color key="tintColor" name="rw-dark"/>
+                                <color key="barTintColor" red="0.93725490196078431" green="0.52156862745098043" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="searchField.textColor">
+                                        <color key="value" name="rw-dark"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="Gxk-Cc-fn0" id="J2q-XW-uGI"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1yx-A7-Skg">
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                                <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" name="rw-light"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Tweet" textLabel="rHf-J3-OdN" style="IBUITableViewCellStyleDefault" id="b7S-5t-IlS">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b7S-5t-IlS" id="wQx-gI-NHU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rHf-J3-OdN">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <color key="textColor" name="rw-light"/>
+                                                    <color key="highlightedColor" name="rw-dark"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Gxk-Cc-fn0" id="3K7-1k-rrx"/>
+                                    <outlet property="delegate" destination="Gxk-Cc-fn0" id="Nbn-kV-Jth"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" name="rw-dark"/>
+                        <constraints>
+                            <constraint firstItem="1yx-A7-Skg" firstAttribute="leading" secondItem="H1k-No-My6" secondAttribute="leading" id="0EB-HB-njz"/>
+                            <constraint firstItem="1yx-A7-Skg" firstAttribute="trailing" secondItem="H1k-No-My6" secondAttribute="trailing" id="Jjo-jO-9Z5"/>
+                            <constraint firstItem="1yx-A7-Skg" firstAttribute="bottom" secondItem="H1k-No-My6" secondAttribute="bottom" id="KL6-cR-2LS"/>
+                            <constraint firstItem="x9N-Ua-YYi" firstAttribute="top" secondItem="H1k-No-My6" secondAttribute="top" id="MBr-17-ue3"/>
+                            <constraint firstItem="1yx-A7-Skg" firstAttribute="top" secondItem="x9N-Ua-YYi" secondAttribute="bottom" id="RSi-Cf-hkX"/>
+                            <constraint firstItem="x9N-Ua-YYi" firstAttribute="leading" secondItem="H1k-No-My6" secondAttribute="leading" id="k71-n8-mO9"/>
+                            <constraint firstItem="1yx-A7-Skg" firstAttribute="top" secondItem="x9N-Ua-YYi" secondAttribute="bottom" id="lki-Mc-LKz"/>
+                            <constraint firstItem="x9N-Ua-YYi" firstAttribute="trailing" secondItem="H1k-No-My6" secondAttribute="trailing" id="quK-b5-xB7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H1k-No-My6"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="1yx-A7-Skg" id="Bvm-x8-dak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j5d-vu-zYa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-445.60000000000002" y="-86.806596701649184"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="rw-dark">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="rw-light">
+            <color red="0.94901960784313721" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <color key="tintColor" name="rw-dark"/>
+</document>
