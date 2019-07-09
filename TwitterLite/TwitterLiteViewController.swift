@@ -28,33 +28,95 @@
 
 import UIKit
 
-class TwitterLiteViewController: UITableViewController {
+class TwitterLiteViewController: UIViewController {
 
-  var tweets:[Tweet] = []
+  var backend:[Tweet] = []
+  var tweets: [Tweet] = []
+  let tweetLimit = 2
+  var initialTweet = 0
+  let initialText = ""
+  var searchText = ""
 
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    try? loadData()
+
+  @IBOutlet var tableView: UITableView!
+
+
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    initialLoad()
   }
 
-  private func loadData() throws {
+  override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    initialLoad()
+  }
+
+  private func initialLoad() {
     if let path = Bundle.main.path(forResource: "Tweet", ofType: "json") {
       let pathURL = URL(fileURLWithPath: path)
-      let data = try Data(contentsOf: pathURL)
-      tweets = try JSONDecoder().decode([Tweet].self, from: data)
+      do {
+        let data = try Data(contentsOf: pathURL)
+        backend = try JSONDecoder().decode([Tweet].self, from: data)
+      } catch {
+        dump(error)
+        backend = []
+      }
+    } else {
+      backend = []
     }
   }
 
+  override func viewDidLoad() {
+    searchText = initialText
+    super.viewDidLoad()
+    try? loadData(withText: searchText, count: tweetLimit)
+  }
+
+  private func loadData(withText text: String, count count: Int) throws {
+    // mimic the behaviour of sending backend request each time
+    //TODO: fake the request
+
+    // Get back with response
+
+    //Need to fix the count
+    tweets = backend.compactMap{ tweet in
+      return tweet.text.contains(text) ? tweet: nil }
+    refreshView(withData: tweets)
+  }
+
+  private func refreshView(withData tweets: [Tweet]) {
+    tableView.reloadData()
+  }
+
+
+
 }
 
-extension TwitterLiteViewController {
-  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+extension TwitterLiteViewController: UITableViewDataSource {
+   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return tweets.count
   }
 
-  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Tweet", for: indexPath)
     cell.textLabel?.text = tweets[indexPath.row].text
     return cell
+  }
+}
+
+extension TwitterLiteViewController: UISearchBarDelegate {
+
+  func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+    print("end")
+  }
+
+  func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+    do {
+      try loadData(withText: searchBar.text ?? "", count: tweetLimit )
+    } catch {
+      dump(error)
+    }
+
+    print("click search")
   }
 }
