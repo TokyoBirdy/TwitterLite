@@ -32,8 +32,8 @@ class TwitterLiteViewController: UIViewController {
 
   var backend:[Tweet] = []
   var tweets: [Tweet] = []
-  let tweetLimit = 2
-  var initialTweet = 0
+  let fetchLimit = 2
+  var initialTweetCount = 0
   let initialText = ""
   var searchText = ""
 
@@ -44,11 +44,13 @@ class TwitterLiteViewController: UIViewController {
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     initialLoad()
+    searchText = initialText
   }
 
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     initialLoad()
+    searchText = initialText
   }
 
   private func initialLoad() {
@@ -67,20 +69,29 @@ class TwitterLiteViewController: UIViewController {
   }
 
   override func viewDidLoad() {
-    searchText = initialText
+
     super.viewDidLoad()
-    try? loadData(withText: searchText, count: tweetLimit)
+    let refreshControl = UIRefreshControl()
+    refreshControl.addTarget(self, action: #selector(fetchData), for: .valueChanged)
+    tableView.refreshControl = refreshControl
+    try? loadData(withText: searchText)
   }
 
-  private func loadData(withText text: String, count count: Int) throws {
+  private func loadData(withText text: String) throws {
     // mimic the behaviour of sending backend request each time
     //TODO: fake the request
 
     // Get back with response
 
     //Need to fix the count
-    tweets = backend.compactMap{ tweet in
+
+    let searchResults = backend.compactMap{ tweet in
       return tweet.text.contains(text) ? tweet: nil }
+    let fetchCount  = initialTweetCount + fetchLimit
+    let resultCount = searchResults.count
+    tweets += Array(searchResults[initialTweetCount..<min(fetchCount,resultCount)])
+    initialTweetCount = tweets.count
+    tableView.refreshControl?.endRefreshing()
     refreshView(withData: tweets)
   }
 
@@ -88,7 +99,13 @@ class TwitterLiteViewController: UIViewController {
     tableView.reloadData()
   }
 
-
+  @objc private func fetchData() {
+    do {
+      try loadData(withText: searchText)
+    } catch {
+      print("pull to refresh error")
+    }
+  }
 
 }
 
@@ -112,7 +129,8 @@ extension TwitterLiteViewController: UISearchBarDelegate {
 
   func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
     do {
-      try loadData(withText: searchBar.text ?? "", count: tweetLimit )
+      searchText = searchBar.text ?? ""
+      try loadData(withText: searchText)
     } catch {
       dump(error)
     }

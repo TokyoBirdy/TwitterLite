@@ -6,5 +6,13 @@
   {
     "_id": "456",
     "greeting": "Humlelu Test"
+  },
+  {
+    "_id": "789",
+    "greeting": "Sofia Test"
+  },
+  {
+    "_id": "101112",
+    "greeting": "Blixt Test"
   }
 ]
