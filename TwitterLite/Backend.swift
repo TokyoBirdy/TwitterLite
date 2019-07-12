@@ -1,4 +1,4 @@
-/// Copyright (c) 1 Reiwa Razeware LLC
+/// Copyright (c) 2019 Razeware LLC
 /// 
 /// Permission is hereby granted, free of charge, to any person obtaining a copy
 /// of this software and associated documentation files (the "Software"), to deal
@@ -28,28 +28,17 @@
 
 import Foundation
 
-enum TwitterLiteError:Error {
-  case filePathError
-}
-
-struct Tweet: Codable {
-  let id: Int
-  let text: String
-
-  private enum CodingKeys: String, CodingKey {
-    case id = "_id"
-    case content = "greeting"
+var backendTweets:[Tweet] = {
+  guard let path = Bundle.main.path(forResource:"Tweet", ofType:"json") else {
+    dump(TwitterLiteError.filePathError)
+    return []
   }
-
-  init(from decoder: Decoder) throws {
-    let values = try decoder.container(keyedBy: CodingKeys.self)
-    id = try Int(values.decode(String.self, forKey: .id)) ?? 0
-    text = try values.decode(String.self, forKey: .content)
+  let pathURL = URL(fileURLWithPath: path)
+  do {
+    let data = try Data(contentsOf: pathURL)
+    return try JSONDecoder().decode([Tweet].self, from: data)
+  } catch {
+   dump(error)
+   return []
   }
-
-  func encode(to encoder: Encoder) throws {
-    var container = encoder.container(keyedBy: CodingKeys.self)
-    try container.encode(id, forKey: .id)
-    try container.encode(text, forKey: .content)
-  }
-}
+}()
