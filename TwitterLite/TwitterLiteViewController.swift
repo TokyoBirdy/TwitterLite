@@ -1,15 +1,15 @@
 /// Copyright (c) 1 Reiwa Razeware LLC
-/// 
+///
 /// Permission is hereby granted, free of charge, to any person obtaining a copy
 /// of this software and associated documentation files (the "Software"), to deal
 /// in the Software without restriction, including without limitation the rights
 /// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 /// copies of the Software, and to permit persons to whom the Software is
 /// furnished to do so, subject to the following conditions:
-/// 
+///
 /// The above copyright notice and this permission notice shall be included in
 /// all copies or substantial portions of the Software.
-/// 
+///
 /// Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
 /// distribute, sublicense, create a derivative work, and/or sell copies of the
 /// Software in any work that is designed, intended, or marketed for pedagogical or
@@ -17,7 +17,7 @@
 /// or information technology.  Permission for such use, copying, modification,
 /// merger, publication, distribution, sublicensing, creation of derivative works,
 /// or sale is expressly withheld.
-/// 
+///
 /// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 /// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 /// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -29,12 +29,15 @@
 import UIKit
 
 class TwitterLiteViewController: UIViewController {
-
   var currentTweets: [Tweet] = []
   let fetchLimit = 2
 
+  let inst = RandomB()
+
   let initialSearchText = ""
   var searchText: String
+  
+  let viewModel: TwitterLiteViewModel = TwitterLiteViewModel()
 
   @IBOutlet var tableView: UITableView!
 
@@ -51,36 +54,13 @@ class TwitterLiteViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     setupRefreshControl()
-    loadTweets(basedOn: searchText)
+    viewModel.loadTweets(basedOn: searchText)
   }
 
   private func setupRefreshControl() {
     let refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
     tableView.refreshControl = refreshControl
-  }
-
-  private func loadTweets(basedOn text: String) {
-    // Mimic the behaviour of sending backend request
-    let range = makeRange(withStartIndex: 0)
-    currentTweets = fetchResults(basedOn: text, range: range)
-    updateResults()
-  }
-
-  private func loadMoreTweets() {
-    let range = makeRange(withStartIndex: currentTweets.count)
-    currentTweets += fetchResults(basedOn: searchText, range: range)
-  }
-
-  private func makeRange(withStartIndex startIndex: Int) -> Range<Int> {
-    let endIndex = startIndex + fetchLimit
-    return startIndex..<endIndex
-  }
-
-  private func fetchResults(basedOn text: String, range: Range<Int>) -> [Tweet] {
-    let searchResults = backendTweets.filter { $0.text.contains(text) }
-    let fetchResults = Array(searchResults[range.startIndex..<min(range.endIndex, searchResults.count)])
-    return fetchResults
   }
 
   private func updateResults() {
@@ -91,7 +71,7 @@ class TwitterLiteViewController: UIViewController {
   }
 
   @objc private func refreshData() {
-    loadMoreTweets()
+    viewModel.loadMoreTweets()
     updateResults()
   }
 }
@@ -119,7 +99,7 @@ extension TwitterLiteViewController: UISearchBarDelegate {
       tableView.reloadData()
     } else {
       self.searchText = searchText
-      loadTweets(basedOn: searchText)
+      viewModel.loadTweets(basedOn: searchText)
     }
   }
 }
