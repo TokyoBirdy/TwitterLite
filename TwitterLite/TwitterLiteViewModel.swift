@@ -35,18 +35,19 @@ class TwitterLiteViewModel {
     self.response = response
     self.moreResponse = moreResponse
   }
-  let fetchLimit = 2
+
+  let fetchLimit = 10
   //these functions were private functions before in ViewController, therefore there is no need to test. But doesn't mean that they are not testable.
   func loadTweets(basedOn text: String) {
     // Mimic the behaviour of sending backend request
     let range = makeRange(withStartIndex: 0)
-    let currentTweets = fetchResults(basedOn: text, range: range)
+    let currentTweets = Array(fetchResults(basedOn: text, range: range).reversed())
     response(currentTweets)
   }
 
   func loadMoreTweets(basedOn text: String, startIndex: Int) {
     let range = makeRange(withStartIndex: startIndex)
-    let tweets = fetchResults(basedOn: text, range: range)
+    let tweets = Array(fetchResults(basedOn: text, range: range).reversed())
     moreResponse(tweets)
   }
 
@@ -60,5 +61,4 @@ class TwitterLiteViewModel {
     let fetchResults = Array(searchResults[range.startIndex..<min(range.endIndex, searchResults.count)])
     return fetchResults
   }
-  
 }
