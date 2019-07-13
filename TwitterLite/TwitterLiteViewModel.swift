@@ -29,28 +29,36 @@
 import Foundation
 
 class TwitterLiteViewModel {
+  var response: ([Tweet]) -> Void
+  var moreResponse: ([Tweet]) -> Void
+  init(response: @escaping ([Tweet]) -> Void, moreResponse: @escaping ([Tweet]) -> Void) {
+    self.response = response
+    self.moreResponse = moreResponse
+  }
+  let fetchLimit = 2
   //these functions were private functions before in ViewController, therefore there is no need to test. But doesn't mean that they are not testable.
-//  func loadTweets(basedOn text: String) {
-//    // Mimic the behaviour of sending backend request
-//    let range = makeRange(withStartIndex: 0)
-//    currentTweets = fetchResults(basedOn: text, range: range)
-//    updateResults()
-//  }
-//
-//  func loadMoreTweets() {
-//    let range = makeRange(withStartIndex: currentTweets.count)
-//    currentTweets += fetchResults(basedOn: searchText, range: range)
-//  }
-//
-//  private func makeRange(withStartIndex startIndex: Int) -> Range<Int> {
-//    let endIndex = startIndex + fetchLimit
-//    return startIndex..<endIndex
-//  }
-//
-//  private func fetchResults(basedOn text: String, range: Range<Int>) -> [Tweet] {
-//    let searchResults = backendTweets.filter { $0.text.contains(text) }
-//    let fetchResults = Array(searchResults[range.startIndex..<min(range.endIndex, searchResults.count)])
-//    return fetchResults
-//  }
-//  
+  func loadTweets(basedOn text: String) {
+    // Mimic the behaviour of sending backend request
+    let range = makeRange(withStartIndex: 0)
+    let currentTweets = fetchResults(basedOn: text, range: range)
+    response(currentTweets)
+  }
+
+  func loadMoreTweets(basedOn text: String, startIndex: Int) {
+    let range = makeRange(withStartIndex: startIndex)
+    let tweets = fetchResults(basedOn: text, range: range)
+    moreResponse(tweets)
+  }
+
+  private func makeRange(withStartIndex startIndex: Int) -> Range<Int> {
+    let endIndex = startIndex + fetchLimit
+    return startIndex..<endIndex
+  }
+
+  private func fetchResults(basedOn text: String, range: Range<Int>) -> [Tweet] {
+    let searchResults = backendTweets.filter { $0.text.contains(text) }
+    let fetchResults = Array(searchResults[range.startIndex..<min(range.endIndex, searchResults.count)])
+    return fetchResults
+  }
+  
 }

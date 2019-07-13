@@ -29,32 +29,46 @@
 import UIKit
 
 class TwitterLiteViewController: UIViewController {
-  var currentTweets: [Tweet] = []
-  let fetchLimit = 2
-
-  let inst = RandomB()
+  var currentTweets: [Tweet] = [] {
+    didSet {
+      self.tableView.reloadData()
+    }
+  }
 
   let initialSearchText = ""
   var searchText: String
+
+  var response: (([Tweet]) -> Void) { return
+  { tweets in
+    self.currentTweets = tweets
+    }
+  }
+  var moreResponse: (([Tweet]) -> Void) { return
+  { tweets in
+    self.currentTweets += tweets
+    }
+  }
   
-  let viewModel: TwitterLiteViewModel = TwitterLiteViewModel()
+  var viewModel: TwitterLiteViewModel?
 
   @IBOutlet var tableView: UITableView!
 
   required init?(coder aDecoder: NSCoder) {
     searchText = initialSearchText
     super.init(coder: aDecoder)
+    viewModel = TwitterLiteViewModel(response: response, moreResponse: moreResponse)
   }
 
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     searchText = initialSearchText
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    viewModel = TwitterLiteViewModel(response: response, moreResponse: moreResponse)
   }
 
   override func viewDidLoad() {
     super.viewDidLoad()
     setupRefreshControl()
-    viewModel.loadTweets(basedOn: searchText)
+    viewModel?.loadTweets(basedOn: searchText)
   }
 
   private func setupRefreshControl() {
@@ -71,7 +85,7 @@ class TwitterLiteViewController: UIViewController {
   }
 
   @objc private func refreshData() {
-    viewModel.loadMoreTweets()
+    viewModel?.loadMoreTweets(basedOn: searchText, startIndex: currentTweets.count)
     updateResults()
   }
 }
@@ -99,7 +113,8 @@ extension TwitterLiteViewController: UISearchBarDelegate {
       tableView.reloadData()
     } else {
       self.searchText = searchText
-      viewModel.loadTweets(basedOn: searchText)
+      viewModel?.loadTweets(basedOn: searchText)
+      updateResults()
     }
   }
 }
