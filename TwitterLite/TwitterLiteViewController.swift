@@ -28,38 +28,27 @@
 
 import UIKit
 
+//TODO: replace it with real data
+//TODO: add tests
 class TwitterLiteViewController: UIViewController {
-  //TODO: add tableview animation when reloading data
   @IBOutlet var tableView: UITableView!
 
-  var currentTweets: [Tweet] = [] {
-    didSet {
-      self.updateResults()
-    }
-  }
-
-  let initialSearchText = ""
-  var searchText: String
-
-  var viewModel: TwitterLiteViewModel?
+  var viewModel: TwitterLiteViewModel!
 
   required init?(coder aDecoder: NSCoder) {
-    searchText = initialSearchText
     super.init(coder: aDecoder)
     viewModel = TwitterLiteViewModel(response: responseTweets, moreResponse: moreResponseTweets)
   }
 
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-    searchText = initialSearchText
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     viewModel = TwitterLiteViewModel(response: responseTweets, moreResponse: moreResponseTweets)
   }
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
     setupRefreshControl()
-    viewModel?.loadTweets(basedOn: searchText)
+    viewModel.loadTweets()
   }
 
   private func setupRefreshControl() {
@@ -76,26 +65,36 @@ class TwitterLiteViewController: UIViewController {
   }
 
   @objc private func refreshData() {
-    viewModel?.loadMoreTweets(basedOn: searchText, startIndex: currentTweets.count)
+    viewModel.loadMoreTweets()
   }
 
   private func responseTweets(_ tweets: [Tweet]) {
-    self.currentTweets = tweets
+    updateResults()
   }
 
+  //TODO:tableview animate the new data insertion
+  // viewcontroller acts differently based on data income
+  // added, loaded. Point to show how viewcontroller would act differently based on what ViewModel send 
   private func moreResponseTweets(_ tweets:[Tweet]) {
-    self.currentTweets = tweets + self.currentTweets
+    tableView.beginUpdates()
+    let indexes = tweets.enumerated().map { (arg0) -> IndexPath in
+      let (offset, _) = arg0
+      return IndexPath(row: offset, section: 0)
+    }
+    tableView.insertRows(at: indexes, with: .fade)
+    tableView.endUpdates()
+    tableView.refreshControl?.endRefreshing()
   }
 }
 
 extension TwitterLiteViewController: UITableViewDataSource {
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return currentTweets.count
+    return viewModel.loadedTweets.count
   }
 
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Tweet", for: indexPath)
-    cell.textLabel?.text = currentTweets[indexPath.row].text
+    cell.textLabel?.text = viewModel.loadedTweets[indexPath.row].text
     return cell
   }
 }
@@ -106,12 +105,12 @@ extension TwitterLiteViewController: UISearchBarDelegate {
   }
 
   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-    if searchText == initialSearchText {
-      currentTweets = []
+    if searchText == viewModel.initialSearchText {
+      viewModel.loadedTweets = []
       tableView.reloadData()
     } else {
-      self.searchText = searchText
-      viewModel?.loadTweets(basedOn: searchText)
+      viewModel.searchText = searchText
+      viewModel.loadTweets()
     }
   }
 }

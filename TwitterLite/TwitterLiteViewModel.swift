@@ -29,25 +29,36 @@
 import Foundation
 
 class TwitterLiteViewModel {
+
+// View model can track the state of the model, and Viewcontroller only need to handle how to react the the data. if only search, there is only ome state, but with refresh to control, there is more states that needs to be dealt with, and ViewModel is a good place to handle this to keep ViewController more focused on its UI job
+  // handle the state of the model by saving the current model status * 
+
+  let initialSearchText = ""
+  var searchText: String
+  var loadedTweets: [Tweet] = []
+  let fetchLimit = 10
+
   var response: ([Tweet]) -> Void
   var moreResponse: ([Tweet]) -> Void
+
   init(response: @escaping ([Tweet]) -> Void, moreResponse: @escaping ([Tweet]) -> Void) {
     self.response = response
     self.moreResponse = moreResponse
+    self.searchText = initialSearchText
   }
 
-  let fetchLimit = 10
   //these functions were private functions before in ViewController, therefore there is no need to test. But doesn't mean that they are not testable.
-  func loadTweets(basedOn text: String) {
+  func loadTweets() {
     // Mimic the behaviour of sending backend request
     let range = makeRange(withStartIndex: 0)
-    let currentTweets = Array(fetchResults(basedOn: text, range: range).reversed())
-    response(currentTweets)
+    loadedTweets = Array(fetchResults(basedOn: searchText, range: range).reversed())
+    response(loadedTweets)
   }
 
-  func loadMoreTweets(basedOn text: String, startIndex: Int) {
-    let range = makeRange(withStartIndex: startIndex)
-    let tweets = Array(fetchResults(basedOn: text, range: range).reversed())
+  func loadMoreTweets() {
+    let range = makeRange(withStartIndex: loadedTweets.count)
+    let tweets = Array(fetchResults(basedOn: searchText, range: range).reversed())
+    loadedTweets = tweets + loadedTweets
     moreResponse(tweets)
   }
 
@@ -61,4 +72,5 @@ class TwitterLiteViewModel {
     let fetchResults = Array(searchResults[range.startIndex..<min(range.endIndex, searchResults.count)])
     return fetchResults
   }
+  
 }

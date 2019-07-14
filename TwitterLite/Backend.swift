@@ -27,7 +27,7 @@
 /// THE SOFTWARE.
 
 import Foundation
-
+//TODO: add enum so that it is not global 
 var backendTweets:[Tweet] = {
   guard let path = Bundle.main.path(forResource:"Tweet", ofType:"json") else {
     dump(TwitterLiteError.filePathError)
