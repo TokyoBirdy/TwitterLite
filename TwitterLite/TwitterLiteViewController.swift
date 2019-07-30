@@ -57,7 +57,7 @@ class TwitterLiteViewController: UIViewController {
     tableView.refreshControl = refreshControl
   }
 
-  private func updateResults() {
+  private func displayResults() {
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.25) {
       self.tableView.refreshControl?.endRefreshing()
       self.tableView.reloadData()
@@ -68,8 +68,8 @@ class TwitterLiteViewController: UIViewController {
     viewModel.loadMoreTweets()
   }
 
-  private func responseTweets(_ tweets: [Tweet]) {
-    updateResults()
+  private func responseTweets() {
+    displayResults()
   }
 
   //TODO:tableview animate the new data insertion
@@ -89,12 +89,12 @@ class TwitterLiteViewController: UIViewController {
 
 extension TwitterLiteViewController: UITableViewDataSource {
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return viewModel.loadedTweets.count
+    return viewModel.tweets.count
   }
 
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Tweet", for: indexPath)
-    cell.textLabel?.text = viewModel.loadedTweets[indexPath.row].text
+    cell.textLabel?.text = viewModel.tweets[indexPath.row].text
     return cell
   }
 }
@@ -106,7 +106,7 @@ extension TwitterLiteViewController: UISearchBarDelegate {
 
   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
     if searchText == viewModel.initialSearchText {
-      viewModel.loadedTweets = []
+      viewModel.tweets = []
       tableView.reloadData()
     } else {
       viewModel.searchText = searchText

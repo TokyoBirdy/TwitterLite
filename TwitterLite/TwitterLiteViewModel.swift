@@ -26,7 +26,7 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-import Foundation
+//import Foundation
 
 class TwitterLiteViewModel {
 
@@ -35,7 +35,7 @@ class TwitterLiteViewModel {
 
   let initialSearchText = ""
   var searchText: String
-  var loadedTweets: [Tweet] = []
+  var tweets: [Tweet] = []
   let fetchLimit = 10
 
   var response: ([Tweet]) -> Void
@@ -51,14 +51,14 @@ class TwitterLiteViewModel {
   func loadTweets() {
     // Mimic the behaviour of sending backend request
     let range = makeRange(withStartIndex: 0)
-    loadedTweets = Array(fetchResults(basedOn: searchText, range: range).reversed())
-    response(loadedTweets)
+    tweets = Array(fetchResults(basedOn: searchText, range: range).reversed())
+    response(tweets)
   }
 
   func loadMoreTweets() {
-    let range = makeRange(withStartIndex: loadedTweets.count)
-    let tweets = Array(fetchResults(basedOn: searchText, range: range).reversed())
-    loadedTweets = tweets + loadedTweets
+    let range = makeRange(withStartIndex: tweets.count)
+    let fetchedTweets = Array(fetchResults(basedOn: searchText, range: range).reversed())
+    tweets = fetchedTweets + tweets
     moreResponse(tweets)
   }
 
