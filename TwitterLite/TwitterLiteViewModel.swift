@@ -48,12 +48,11 @@ class TwitterLiteViewModel {
     self.searchText = initialSearchText
   }
 
-  //these functions were private functions before in ViewController, therefore there is no need to test. But doesn't mean that they are not testable.
+  //These functions were private functions before in ViewController, therefore there is no need to test. But doesn't mean that they are not testable.
   func loadTweets() {
     // Mimic the behaviour of sending backend request
     let range = makeRange(withStartIndex: 0)
     tweets = Array(fetchResults(basedOn: searchText, range: range).reversed())
-
     response()
   }
 
@@ -70,15 +69,11 @@ class TwitterLiteViewModel {
   }
 
   private func fetchResults(basedOn text: String, range: Range<Int>) -> [Tweet] {
-    let searchResults = backendTweets.filter {
-      if $0.text.range(of: text, options: .caseInsensitive) != nil {
-        return true
-      }
-      return false
+    let searchResults = Backend.backendTweets.filter {
+      return $0.text.range(of: text, options: .caseInsensitive) != nil
     }
     let fetchResults = Array(searchResults[range.startIndex..<min(range.endIndex, searchResults.count)])
     lastFetchedTweetsCount = fetchResults.count
     return fetchResults
   }
-  
 }

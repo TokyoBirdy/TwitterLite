@@ -27,21 +27,24 @@
 /// THE SOFTWARE.
 
 import Foundation
-//TODO: add enum so that it is not global 
-var backendTweets:[Tweet] = {
-  guard let path = Bundle.main.path(forResource:"Tweet", ofType:"json") else {
-    dump(TwitterLiteError.filePathError)
-    return []
-  }
-  let pathURL = URL(fileURLWithPath: path)
-  do {
-    let data = try Data(contentsOf: pathURL)
-    let decoder = JSONDecoder()
-    decoder.dateDecodingStrategy = .formatted(DateFormatter.formatter)
-    let root = try decoder.decode(Root.self, from: data)
-    return root.statuses
-  } catch {
-   dump(error)
-   return []
-  }
-}()
+
+enum Backend {
+  static let backendTweets:[Tweet] = {
+    guard let path = Bundle.main.path(forResource:"Tweet", ofType:"json") else {
+      dump(TwitterLiteError.filePathError)
+      return []
+    }
+    let pathURL = URL(fileURLWithPath: path)
+    do {
+      let data = try Data(contentsOf: pathURL)
+      let decoder = JSONDecoder()
+      decoder.dateDecodingStrategy = .formatted(DateFormatter.formatter)
+      let root = try decoder.decode(Root.self, from: data)
+      return root.statuses
+    } catch {
+      dump(error)
+      return []
+    }
+  }()
+}
+

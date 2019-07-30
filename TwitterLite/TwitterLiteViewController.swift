@@ -28,7 +28,6 @@
 
 import UIKit
 
-//TODO: replace it with real data
 //TODO: add tests
 class TwitterLiteViewController: UIViewController {
   @IBOutlet var tableView: UITableView!
@@ -57,6 +56,10 @@ class TwitterLiteViewController: UIViewController {
     tableView.refreshControl = refreshControl
   }
 
+  @objc private func refreshData() {
+    viewModel.loadMoreTweets()
+  }
+
   private func displayResults() {
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.25) {
       self.tableView.refreshControl?.endRefreshing()
@@ -64,23 +67,16 @@ class TwitterLiteViewController: UIViewController {
     }
   }
 
-  @objc private func refreshData() {
-    viewModel.loadMoreTweets()
-  }
-
   private func responseTweets() {
     displayResults()
   }
 
-  //TODO:tableview animate the new data insertion
-  // viewcontroller acts differently based on data income
-  // added, loaded. Point to show how viewcontroller would act differently based on what ViewModel send 
   private func moreResponseTweets() {
+    tableView.refreshControl?.endRefreshing()
     tableView.beginUpdates()
     let indexes = (0..<viewModel.lastFetchedTweetsCount).map { IndexPath(row: $0, section: 0) }
     tableView.insertRows(at: indexes, with: .fade)
     tableView.endUpdates()
-    tableView.refreshControl?.endRefreshing()
   }
 }
 
@@ -100,10 +96,12 @@ extension TwitterLiteViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return UITableView.automaticDimension
   }
+
   func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
     return UITableView.automaticDimension
   }
 }
+
 extension TwitterLiteViewController: UISearchBarDelegate {
   func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
     searchBar.resignFirstResponder()
