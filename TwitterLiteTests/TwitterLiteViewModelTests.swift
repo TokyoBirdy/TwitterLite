@@ -27,7 +27,28 @@
 /// THE SOFTWARE.
 
 import XCTest
+@testable import TwitterLite
 
-class TwitterLiteTests: XCTestCase {
+class TwitterLiteViewModelTests: XCTestCase {
+  let response:()->Void = {}
+  let moreResponse:()->Void = {}
+  var viewModel: TwitterLiteViewModel!
+  override func setUp() {
+    super.setUp()
+    self.viewModel = TwitterLiteViewModel(response: response, moreResponse: moreResponse)
+  }
 
+  func testLoadTweetsWillUpdateResults() {
+    viewModel.searchText = "swiftui"
+    viewModel.loadTweets()
+    XCTAssertEqual(viewModel.tweets.count, viewModel.fetchLimit)
+  }
+
+  func testLoadMoreTweetsWillUpdateResults() {
+    viewModel.searchText = "swiftui"
+    viewModel.loadMoreTweets()
+    XCTAssertTrue(viewModel.tweets.count > 0)
+  }
 }
+
+
