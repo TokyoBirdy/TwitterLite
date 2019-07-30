@@ -36,12 +36,13 @@ class TwitterLiteViewModel {
   let initialSearchText = ""
   var searchText: String
   var tweets: [Tweet] = []
-  let fetchLimit = 10
+  let fetchLimit = 6
+  var lastFetchedTweetsCount: Int = 0
 
-  var response: ([Tweet]) -> Void
-  var moreResponse: ([Tweet]) -> Void
+  var response: () -> Void
+  var moreResponse: () -> Void
 
-  init(response: @escaping ([Tweet]) -> Void, moreResponse: @escaping ([Tweet]) -> Void) {
+  init(response: @escaping () -> Void, moreResponse: @escaping () -> Void) {
     self.response = response
     self.moreResponse = moreResponse
     self.searchText = initialSearchText
@@ -52,14 +53,15 @@ class TwitterLiteViewModel {
     // Mimic the behaviour of sending backend request
     let range = makeRange(withStartIndex: 0)
     tweets = Array(fetchResults(basedOn: searchText, range: range).reversed())
-    response(tweets)
+
+    response()
   }
 
   func loadMoreTweets() {
     let range = makeRange(withStartIndex: tweets.count)
     let fetchedTweets = Array(fetchResults(basedOn: searchText, range: range).reversed())
     tweets = fetchedTweets + tweets
-    moreResponse(tweets)
+    moreResponse()
   }
 
   private func makeRange(withStartIndex startIndex: Int) -> Range<Int> {
@@ -68,8 +70,14 @@ class TwitterLiteViewModel {
   }
 
   private func fetchResults(basedOn text: String, range: Range<Int>) -> [Tweet] {
-    let searchResults = backendTweets.filter { $0.text.contains(text) }
+    let searchResults = backendTweets.filter {
+      if $0.text.range(of: text, options: .caseInsensitive) != nil {
+        return true
+      }
+      return false
+    }
     let fetchResults = Array(searchResults[range.startIndex..<min(range.endIndex, searchResults.count)])
+    lastFetchedTweetsCount = fetchResults.count
     return fetchResults
   }
   

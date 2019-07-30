@@ -13,6 +13,7 @@
 		162C5D4F22D88987001F8EC2 /* Backend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162C5D4E22D88987001F8EC2 /* Backend.swift */; };
 		162C5D5722D88E15001F8EC2 /* TwitterLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162C5D5622D88E15001F8EC2 /* TwitterLiteTests.swift */; };
 		169EEA6E22D9B3C300293125 /* TwitterLiteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169EEA6D22D9B3C300293125 /* TwitterLiteViewModel.swift */; };
+		16EEA0B422F0726F00A09E31 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16EEA0B322F0726F00A09E31 /* DateFormatter.swift */; };
 		5394F02521864DF5006E754C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5394F02321864DF4006E754C /* LaunchScreen.storyboard */; };
 		D2A5F2091F4A9144005CD714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F2071F4A9144005CD714 /* Main.storyboard */; };
 		D2A5F20B1F4A9144005CD714 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2A5F20A1F4A9144005CD714 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		162C5D5622D88E15001F8EC2 /* TwitterLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterLiteTests.swift; sourceTree = "<group>"; };
 		162C5D5822D88E15001F8EC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		169EEA6D22D9B3C300293125 /* TwitterLiteViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterLiteViewModel.swift; sourceTree = "<group>"; };
+		16EEA0B322F0726F00A09E31 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		5394F02421864DF4006E754C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2A5F2001F4A9144005CD714 /* TwitterLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A5F2081F4A9144005CD714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				169EEA6D22D9B3C300293125 /* TwitterLiteViewModel.swift */,
 				162C5D4822D348BF001F8EC2 /* TwitterLiteViewController.swift */,
 				162C5D4E22D88987001F8EC2 /* Backend.swift */,
+				16EEA0B322F0726F00A09E31 /* DateFormatter.swift */,
 				162C5D4A22D3493E001F8EC2 /* Tweet.json */,
 				162C5D4C22D349B9001F8EC2 /* Tweet.swift */,
 				5394F02321864DF4006E754C /* LaunchScreen.storyboard */,
@@ -221,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16EEA0B422F0726F00A09E31 /* DateFormatter.swift in Sources */,
 				162C5D4F22D88987001F8EC2 /* Backend.swift in Sources */,
 				162C5D4D22D349B9001F8EC2 /* Tweet.swift in Sources */,
 				162C5D4922D348BF001F8EC2 /* TwitterLiteViewController.swift in Sources */,

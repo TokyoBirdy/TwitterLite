@@ -75,12 +75,9 @@ class TwitterLiteViewController: UIViewController {
   //TODO:tableview animate the new data insertion
   // viewcontroller acts differently based on data income
   // added, loaded. Point to show how viewcontroller would act differently based on what ViewModel send 
-  private func moreResponseTweets(_ tweets:[Tweet]) {
+  private func moreResponseTweets() {
     tableView.beginUpdates()
-    let indexes = tweets.enumerated().map { (arg0) -> IndexPath in
-      let (offset, _) = arg0
-      return IndexPath(row: offset, section: 0)
-    }
+    let indexes = (0..<viewModel.lastFetchedTweetsCount).map { IndexPath(row: $0, section: 0) }
     tableView.insertRows(at: indexes, with: .fade)
     tableView.endUpdates()
     tableView.refreshControl?.endRefreshing()

@@ -1,4 +1,4 @@
-/// Copyright (c) 1 Reiwa Razeware LLC
+/// Copyright (c) 2019 Razeware LLC
 /// 
 /// Permission is hereby granted, free of charge, to any person obtaining a copy
 /// of this software and associated documentation files (the "Software"), to deal
@@ -28,18 +28,11 @@
 
 import Foundation
 
-enum TwitterLiteError:Error {
-  case filePathError
+extension DateFormatter {
+  static let formatter: DateFormatter = {
+    let formatter = DateFormatter()
+    //"Tue Jul 30 08:52:29 +0000 2019"
+    formatter.dateFormat = "E MMM d HH:mm:ssZ yyyy"
+    return formatter
+  }()
 }
-
-struct Root: Codable {
-  let statuses: [Tweet]
-}
-
-struct Tweet: Codable {
-  let id: Int
-  let text: String
-  let created_at: Date
-}
-
-

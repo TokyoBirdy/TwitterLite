@@ -36,7 +36,10 @@ var backendTweets:[Tweet] = {
   let pathURL = URL(fileURLWithPath: path)
   do {
     let data = try Data(contentsOf: pathURL)
-    return try JSONDecoder().decode([Tweet].self, from: data)
+    let decoder = JSONDecoder()
+    decoder.dateDecodingStrategy = .formatted(DateFormatter.formatter)
+    let root = try decoder.decode(Root.self, from: data)
+    return root.statuses
   } catch {
    dump(error)
    return []
