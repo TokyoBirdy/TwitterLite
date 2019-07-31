@@ -28,49 +28,48 @@
 
 import UIKit
 
-//TODO: add tests
 class TwitterLiteViewController: UIViewController {
   @IBOutlet var tableView: UITableView!
-
+  
   var viewModel: TwitterLiteViewModel!
-
+  
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     viewModel = TwitterLiteViewModel(response: responseTweets, moreResponse: moreResponseTweets)
   }
-
+  
   override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
     super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     viewModel = TwitterLiteViewModel(response: responseTweets, moreResponse: moreResponseTweets)
   }
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     setupRefreshControl()
     viewModel.loadTweets()
   }
-
+  
   private func setupRefreshControl() {
     let refreshControl = UIRefreshControl()
     refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
     tableView.refreshControl = refreshControl
   }
-
+  
   @objc private func refreshData() {
     viewModel.loadMoreTweets()
   }
-
+  
   private func displayResults() {
     DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.25) {
       self.tableView.refreshControl?.endRefreshing()
       self.tableView.reloadData()
     }
   }
-
+  
   private func responseTweets() {
     displayResults()
   }
-
+  
   private func moreResponseTweets() {
     tableView.refreshControl?.endRefreshing()
     tableView.beginUpdates()
@@ -81,11 +80,11 @@ class TwitterLiteViewController: UIViewController {
 }
 
 extension TwitterLiteViewController: UITableViewDataSource {
-   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return viewModel.tweets.count
   }
-
-   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Tweet", for: indexPath)
     cell.textLabel?.text = viewModel.tweets[indexPath.row].text
     return cell
@@ -96,7 +95,7 @@ extension TwitterLiteViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return UITableView.automaticDimension
   }
-
+  
   func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
     return UITableView.automaticDimension
   }
@@ -106,7 +105,7 @@ extension TwitterLiteViewController: UISearchBarDelegate {
   func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
     searchBar.resignFirstResponder()
   }
-
+  
   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
     if searchText == viewModel.initialSearchText {
       viewModel.tweets = []

@@ -29,12 +29,12 @@
 import Foundation
 
 enum Backend {
-  static let backendTweets:[Tweet] = {
-    guard let path = Bundle.main.path(forResource:"Tweet", ofType:"json") else {
+  static let backendTweets: [Tweet] = {
+    guard let pathURL = Bundle.main.url(forResource: "Tweet", withExtension: "json") else {
       dump(TwitterLiteError.filePathError)
       return []
     }
-    let pathURL = URL(fileURLWithPath: path)
+
     do {
       let data = try Data(contentsOf: pathURL)
       let decoder = JSONDecoder()

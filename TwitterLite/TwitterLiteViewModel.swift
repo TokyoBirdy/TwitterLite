@@ -29,25 +29,25 @@
 //import Foundation
 
 class TwitterLiteViewModel {
-
-// View model can track the state of the model, and Viewcontroller only need to handle how to react the the data. if only search, there is only ome state, but with refresh to control, there is more states that needs to be dealt with, and ViewModel is a good place to handle this to keep ViewController more focused on its UI job
+  
+  // View model can track the state of the model, and Viewcontroller only need to handle how to react the the data. if only search, there is only ome state, but with refresh to control, there is more states that needs to be dealt with, and ViewModel is a good place to handle this to keep ViewController more focused on its UI job
   // handle the state of the model by saving the current model status * 
-
+  
   let initialSearchText = ""
   var searchText: String
   var tweets: [Tweet] = []
   let fetchLimit = 6
   var lastFetchedTweetsCount: Int = 0
-
+  
   var response: () -> Void
   var moreResponse: () -> Void
-
+  
   init(response: @escaping () -> Void, moreResponse: @escaping () -> Void) {
     self.response = response
     self.moreResponse = moreResponse
     self.searchText = initialSearchText
   }
-
+  
   //These functions were private functions before in ViewController, therefore there is no need to test. But doesn't mean that they are not testable.
   func loadTweets() {
     // Mimic the behaviour of sending backend request
@@ -55,24 +55,25 @@ class TwitterLiteViewModel {
     tweets = Array(fetchResults(basedOn: searchText, range: range).reversed())
     response()
   }
-
+  
   func loadMoreTweets() {
     let range = makeRange(withStartIndex: tweets.count)
     let fetchedTweets = Array(fetchResults(basedOn: searchText, range: range).reversed())
     tweets = fetchedTweets + tweets
     moreResponse()
   }
-
+  
   private func makeRange(withStartIndex startIndex: Int) -> Range<Int> {
     let endIndex = startIndex + fetchLimit
     return startIndex..<endIndex
   }
-
+  
   private func fetchResults(basedOn text: String, range: Range<Int>) -> [Tweet] {
     let searchResults = Backend.backendTweets.filter {
       return $0.text.range(of: text, options: .caseInsensitive) != nil
     }
-    let fetchResults = Array(searchResults[range.startIndex..<min(range.endIndex, searchResults.count)])
+    let clampedRange = range.clamped(to: range.lowerBound..<searchResults.count)
+    let fetchResults = Array(searchResults[clampedRange])
     lastFetchedTweetsCount = fetchResults.count
     return fetchResults
   }

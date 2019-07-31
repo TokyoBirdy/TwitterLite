@@ -37,13 +37,13 @@ class TwitterLiteViewModelTests: XCTestCase {
     super.setUp()
     self.viewModel = TwitterLiteViewModel(response: response, moreResponse: moreResponse)
   }
-
+  
   func testLoadTweetsWillUpdateResults() {
     viewModel.searchText = "swiftui"
     viewModel.loadTweets()
     XCTAssertEqual(viewModel.tweets.count, viewModel.fetchLimit)
   }
-
+  
   func testLoadMoreTweetsWillUpdateResults() {
     viewModel.searchText = "swiftui"
     viewModel.loadMoreTweets()
