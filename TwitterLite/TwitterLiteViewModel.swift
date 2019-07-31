@@ -72,7 +72,8 @@ class TwitterLiteViewModel {
     let searchResults = Backend.backendTweets.filter {
       return $0.text.range(of: text, options: .caseInsensitive) != nil
     }
-    let fetchResults = Array(searchResults[range.startIndex..<min(range.endIndex, searchResults.count)])
+    let clampedRange = range.clamped(to: range.lowerBound..<searchResults.count)
+    let fetchResults = Array(searchResults[clampedRange])
     lastFetchedTweetsCount = fetchResults.count
     return fetchResults
   }

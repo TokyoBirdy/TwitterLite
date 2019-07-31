@@ -28,7 +28,6 @@
 
 import UIKit
 
-//TODO: add tests
 class TwitterLiteViewController: UIViewController {
   @IBOutlet var tableView: UITableView!
 
