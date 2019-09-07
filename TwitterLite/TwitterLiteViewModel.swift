@@ -50,14 +50,21 @@ class TwitterLiteViewModel {
   }
   // Mimic the behaviour of sending backend request
   func loadTweets(loadingStatus: LoadingStatus) {
+    // 1
     if loadingStatus == .initial {
       tweets = []
     }
+    // 2
     let range = makeRange(withStartIndex: tweets.count)
-    let fetchedTweets = Array(fetchResults(basedOn: searchContent, range: range).reversed())
-    tweets = fetchedTweets + tweets
+    // 3
+    let fetchedResults = fetchResults(basedOn: searchContent, range: range)
+    // 4
+    let reversedResults = fetchedResults.reversed()
+    // 5
+    let tweetsArray = Array(reversedResults)
+    // 6
     response(loadingStatus)
-   // delegate?.viewModel(self, didReceiveResponse: loadingStatus)
+    //delegate?.viewModel(self, didReceiveResponse: loadingStatus)
   }
 
   private func makeRange(withStartIndex startIndex: Int) -> Range<Int> {
