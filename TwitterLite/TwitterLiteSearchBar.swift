@@ -29,7 +29,7 @@
 import UIKit
 
 class  TwitterLiteSearchbar: UISearchBar {
-  private let color = UIColor(red: 255.0/255.0, green: 126.0/255.0, blue: 121.0/255.0, alpha: 1)
+  private let color = UIColor(red: 42.0/255.0, green: 102.0/255.0, blue: 60.0/255.0, alpha: 1)
   private let image = UIImage(named: "clear")
 
   required init?(coder aDecoder: NSCoder) {
