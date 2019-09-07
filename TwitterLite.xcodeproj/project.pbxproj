@@ -96,13 +96,13 @@
 			isa = PBXGroup;
 			children = (
 				D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */,
-				D2A5F2071F4A9144005CD714 /* Main.storyboard */,
 				162C5D4822D348BF001F8EC2 /* TwitterLiteViewController.swift */,
 				16EEC3ED23056E73009362C6 /* TwitterLiteSearchBar.swift */,
-				16EEC3EF2306837A009362C6 /* LoadingStatus.swift */,
 				162C5D4E22D88987001F8EC2 /* Backend.swift */,
-				162C5D4A22D3493E001F8EC2 /* Tweet.json */,
 				162C5D4C22D349B9001F8EC2 /* Tweet.swift */,
+				16EEC3EF2306837A009362C6 /* LoadingStatus.swift */,
+				162C5D4A22D3493E001F8EC2 /* Tweet.json */,
+				D2A5F2071F4A9144005CD714 /* Main.storyboard */,
 				5394F02321864DF4006E754C /* LaunchScreen.storyboard */,
 				D2A5F20A1F4A9144005CD714 /* Assets.xcassets */,
 				D2A5F20F1F4A9144005CD714 /* Info.plist */,
