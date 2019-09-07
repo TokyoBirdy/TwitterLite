@@ -63,6 +63,7 @@ class TwitterLiteViewModel {
     // 5
     let tweetsArray = Array(reversedResults)
     // 6
+    tweets = tweetsArray + tweets
     response(loadingStatus)
     //delegate?.viewModel(self, didReceiveResponse: loadingStatus)
   }
