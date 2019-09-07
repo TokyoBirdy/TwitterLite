@@ -91,7 +91,7 @@ class TwitterLiteViewController: UIViewController {
     let tweetsArray = Array(reversedResults)
     // 6
     tweets = tweetsArray + tweets
-    response(loadingStatus)
+    displayTweets(loadingStatus: loadingStatus)
   }
 
   private func makeRange(withStartIndex startIndex: Int) -> Range<Int> {
